@@ -36,7 +36,7 @@ font-size:80px;
 
 
 header
-{background:url(DSC_5417.JPG) no-repeat center top;
+{background:url(DSC_5427.JPG) no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -114,6 +114,14 @@ overflow:hidden;}
     flex-direction:row;
     justify-content:space-between;
   }
+  header
+{background:url(DSC_5417.JPG) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+height:612px;}
+  
 }
 
 
