@@ -97,6 +97,9 @@ overflow:hidden;}
 @media only screen and (max-device-width: 768px) 
 {table td{width:50%;}}
 
+@media only screen and (max-device-width: 400px) 
+{table td{width:20%;}}
+
 .otziv_item img
 {display:inline-block;
 width:95px;
