@@ -107,7 +107,10 @@ overflow:hidden;}
     font-weight:bold;
   font-size:16px;}
   
-
+  .menu
+  {display:flex;
+    flex-direction:row;
+  }
 }
 
 
