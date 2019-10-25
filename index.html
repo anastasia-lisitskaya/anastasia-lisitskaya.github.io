@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title> 8 небо </title>
+ <meta name="anastasia" content="text/html: charset=utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      
+   <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+    </head>
+<body class="bod"><div class="foto">
+    <header class="container-fluid text-white ">
+ <nav class="links container-fluid navbar navbar-expand-sm order-sm-0"><img class="float-left logo " src="logo.png" title="Логотип">
+      <a  href="#studio" >О студии</a> 				
+       <a  href="#napravlenia">Направления</a>
+<a  href="#cost">Стоимость</a>
+<a  href="#otzivi">Отзывы</a>
+<a  href="#contacts">Контакты</a></nav>
+ </header>
+
+ 
+<div class="container-fluid first text-black p-3 order-sm-0" id="studio" >
+<div class="container">
+<h2>О студии</h2><br>
+Почувствовать себя на восьмом небе от счастья может каждый, кто умеет танцевать так же, как ученики одноимённой школы танца "8 НЕБО"! 
+Наши профессиональные педагоги-хореографы обучают деток с 3-х лет и взрослых без ограничений по возрасту. Преподаватели регулярно повышают свой уровень профессионального мастерства, участвуя во всероссийских и международных конкурсах, проходя обучающие мастер-классы. Но самое главное то, что чувствуют наши ученики во время занятий, а это всегда позитив, желание добиться прекрасных результатов и показать максимум своих возможностей и эмоций. Даже начинающие танцоры имеют возможность почувствовать себя звёздами на лучших сценах города, поучаствовать в городских культурных мероприятиях и принять участие в танцевальных конкурсах и фестивалях!
+</div><br><br>
+</div></div>
+<div class="container-fluid second text-white p-3  order-sm-0" id="napravlenia" >
+<div class="container ">
+<h2>Танцевальные направления </h2> <br>
+ТАНЦЕВАЛЬНЫЕ НАПРАВЛЕНИЯ ДЛЯ ДЕТЕЙ:<br>
+- 3-7 лет детская хореография, ритмопластика, растяжка, азы гимнастики и акробатики;
+<br>- с 7 лет Belly dance для детей;
+<br>- c 7 лет современные танцы, растяжка;
+<br>- с 7 лет Hip-hop, уличные танцы;
+<br>- Vogue
+<br><br>
+ТАНЦЕВАЛЬНЫЕ НАПРАВЛЕНИЯ ДЛЯ ВЗРОСЛЫХ:
+<br>- Танец живота
+<br>- Стрип-пластика
+<br>- Vogue
+</div></div>
+<div class="container-fluid third p-3  order-sm-0" id="cost" >
+<div class="container ">
+<h2>Стоимость занятий</h2> <br>
+
+<div class="price">
+    <div id="calculator" class="calculator">
+    <table>
+        <colgroup>
+            <col width="70%">
+            <col width="30%">
+        </colgroup>
+        <tbody><tr class="required">
+            <td>Количество тренировок/абонементов</td>
+            <td><input name="area" type="text" ></td>
+    
+        </tr>
+        <tr class="required">
+            <td>Тип</td>
+            <td colspan="2">
+                <select name="textur">
+                    <option value="one">Разовое посещение</option>
+                    <option value="onem">Абонемент на месяц</option>
+                    <option value="threem">Абонемент "Семейный"</option>
+                  
+                </select>
+            </td>
+        </tr>
+      
+        
+    </tbody></table><form name=fff>
+  Фирменная одежда для тренировок:<br />
+      <label><input type="radio" id="v1" 
+        name="radio-group-1" value="Значение1" />
+        Не нужно</label>
+      <label><input type="radio" id="v2"
+        name="radio-group-1" value="Значение2" />
+        На одного</label><br />
+<label><input type="radio" id="v3"
+        name="radio-group-1" value="Значение3" />
+        На двух</label><br />
+
+      Фирменная одежда для тренировок:<br />
+      <label><input type="checkbox" id="v4" 
+        name="check-1" />
+        Приобрести</label><br />
+
+ </form>
+    <div class="total">
+    Итого: <span class="total">2990 руб.</span>
+    </div>
+    </div>
+</div>
+
+<script>
+
+(function ($) {
+  $(function () {
+ 
+        calculate();
+
+        jQuery('#calculator input').keyup(function() {
+            this.value = this.value.replace(/[^0-9\.,]/g, '');
+            this.value = this.value.replace(/[,]/, '.');
+        });
+        jQuery('#calculator input, #calculator select').change(function() {
+            calculate();
+        });
+        jQuery('#calculator input').keyup(function() {
+            calculate();
+        });
+        function calculate() {
+      $('.calculator').each(function(key, val){
+        calcInputs = {};
+            $(this).find('input, select').each(function(key, val){
+                name = $(this).attr('name');
+                val = $(this).val();
+                if (!$.isNumeric(val)) {
+                    switch (name) {
+                        case 'area':
+                            
+                            break;
+                        
+                        default:
+                            break;
+                    }
+                    $(this).val(val);
+                }
+                calcInputs[name] = val;
+            });
+ 
+            total = 0;
+ 
+            switch (calcInputs.textur) {
+                case 'one':
+            total += calcInputs.area * 350;
+ document.getElementById("v1").disabled = true; 
+document.getElementById("v2").disabled = true; 
+document.getElementById("v3").disabled = true; 
+document.getElementById("v4").disabled = true;
+v1.checked=false;
+v2.checked=false;
+v3.checked=false;
+v4.checked=false;
+            break;
+                case 'onem':
+            total += calcInputs.area * 2500;
+document.getElementById("v1").disabled = true; 
+document.getElementById("v2").disabled = true; 
+document.getElementById("v3").disabled = true;
+document.getElementById("v4").disabled = false; 
+v1.checked=false;
+v2.checked=false;
+v3.checked=false;
+
+            break;
+                case 'threem':
+            total += calcInputs.area * 3750;
+document.getElementById("v1").disabled = false; 
+document.getElementById("v2").disabled = false; 
+document.getElementById("v3").disabled = false;
+document.getElementById("v4").disabled = true;  
+v4.checked=false;
+            break;
+         
+            default:
+            break;
+            }
+if(v2.checked) {total+=1500;}
+ if(v3.checked) {total+=3000;} 
+ if(v4.checked) {total+=1500;}           
+            total += ' руб.';
+            jQuery(this).find('span.total').html(total);
+      });
+        }
+ 
+    });
+})(jQuery);
+;
+
+</script>
+
+</div></div>
+
+
+<div class="container-fluid second text-white p-3  order-sm-0" id="otzivi" >
+<div class="container ">
+<h2>Отзывы</h2> <br>
+<div class="otziv_item">
+    <div class="name">Мария
+    <span>20.09.2019</span>
+    </div>
+    <div class="otziv"><p>8 небо - любимая школа танцев.
+ На тренировках всегда уютная и дружеская атмосфера. 
+Преподаватели - профессионалы своего дела. 
+Занятия проходят очень весело и инетересно. 
+А самое главное, что 8 небо - это большая и крепкая семья, где все друг друга любят и поддерживают!</div>
+</div><div class="otziv_item">
+    <div class="name">Диана
+    <span>22.05.2019</span>
+    </div>
+    <div class="otziv"><p>Отличный танцевальный коллектив! 
+Очень профессиональные педагоги, благодаря которым отличная подготовка и высшие награды! 
+Дети принимают участие в Международных конкурсах. 
+Ребенок на занятия всегда бежит с удовольствием. Всем рекомендую!</div>
+</div><div class="otziv_item">
+    <div class="name">Наталья
+    <span>12.10.2019</span>
+    </div>
+    <div class="otziv"><p>Отличная студия, моя дочь с большим удовольствием посещает. 
+И после занятий прекрасно себя чувствует (радостна и воодушевлена). 
+Преподаватели прекрасные умеют найти подход к детям и главное работают с желанием, а это важно в творческом процессе. Благодарю руководство и персонал за отличную работу.</div>
+</div>
+</div></div>
+
+<div class="container-fluid first text-black p-3  order-sm-0" id="contacts" >
+<div class="container ">
+<h2>Контакты</h2> <br>
+Школа танцев "8 небо"<br>
+Телефон: +7 (918) 249-05-55<br>
+Адрес: г. Крaснoдaр, ЮМР, проспект Чекистов 36, ТЦ "Пять Звёзд", фитнес клуб "Fitness-Life", 4 этаж
+</div></div>
+
+</div>
+<footer class="container-fluid d-flex flex-wrap align-content-center p-1 justify-content-end third">
+      <p><sup>(c)</sup>Лисицкая А.А. 2019</p>
+   </footer>
+</body>
+</html>
