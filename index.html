@@ -82,7 +82,7 @@
 <label><input type="radio" id="v3"
         name="radio-group-1" value="Значение3" />
     На двух</label><br /></div>
-<div id="ch"
+<div id="ch">
       Фирменная одежда для тренировок:<br />
       <label><input type="checkbox" id="v4" 
         name="check-1" />
@@ -138,19 +138,26 @@
                 case 'one':
             total += calcInputs.area * 350;
  document.getElementById("r").hidden = true; 
-document.getElementById("ch").hidden = true; 
-
+document.getElementById("ch").hidden = true;
+                v1.checked=false;
+v2.checked=false;
+v3.checked=false;
+v4.checked=false;   
+              
             break;
                 case 'onem':
             total += calcInputs.area * 2500;
  document.getElementById("r").hidden = true; 
 document.getElementById("ch").hidden = false;
-
+v1.checked=false;
+v2.checked=false;
+v3.checked=false;
             break;
                 case 'threem':
             total += calcInputs.area * 3750;
  document.getElementById("r").hidden = false; 
 document.getElementById("ch").hidden = true;
+                    v4.checked=false;
             break;
          
             default:
