@@ -27,11 +27,11 @@ background:#f2dae3;
 a{color:#0a0069;
 text-decoration:none;}
 
-h1{height:100px;
+h1{
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-font-size:80px;
+font-size:45px;
 }
 
 
