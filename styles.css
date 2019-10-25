@@ -103,9 +103,11 @@ overflow:hidden;}
   .links {
      display:flex;
    flex-direction:row;
-    justify-content:between-around;
+    justify-content:space-between;
     font-weight:bold;
   font-size:16px;}
+  
+
 }
 
 
