@@ -45,7 +45,7 @@ height:612px;}
 
 .links {
      display:flex;
-   flex-direction:column;
+   flex-direction:row;
 font-size:9px;
    font-weight:bold;
 opacity:0.7;
@@ -55,6 +55,11 @@ opacity:0.7;
      background-size: cover;
 background:url(Blue-lines-abstract-background_2560x1600.jpg) no-repeat;
    }
+
+.menu{
+display:flex;
+flex-direction:column;
+justify-content:flex-end;}
 
 .price{
     padding: 20px 20px 0px 20px;
