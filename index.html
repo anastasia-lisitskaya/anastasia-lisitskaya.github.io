@@ -100,8 +100,10 @@
     </div>
     </div>
 </div>
-
-<script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
 
 (function ($) {
   $(function () {
@@ -181,6 +183,12 @@ if(v2.checked) {total+=1500;}
 })(jQuery);
 ;
 
+    
+    $(document).ready(function(){
+  $('.your-class').slick({
+    setting-name: setting-value
+  });
+});
 </script>
 
 </div></div>
@@ -229,5 +237,7 @@ if(v2.checked) {total+=1500;}
 <footer class="container-fluid d-flex flex-wrap align-content-center p-1 justify-content-end third">
       <p><sup>(c)</sup>Лисицкая А.А. 2019</p>
    </footer>
+ 
+				
 </body>
 </html>
