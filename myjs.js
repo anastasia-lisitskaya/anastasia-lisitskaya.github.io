@@ -1,4 +1,3 @@
-
     $("#myslidergg").slick({
         dots: true,
         infinite: true,
