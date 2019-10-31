@@ -109,13 +109,13 @@ table {width:35%;}
 }
 
 
- #myslidergg img{max-height:350px;
+ #myslidergg img{
 	 width:100%;
 	 max-width:450px;
 }
 
 .slider__dots .slick-active {
-  border-color: white;
+  color: white;
 
 @media only screen and (min-device-width: 768px) 
 {
