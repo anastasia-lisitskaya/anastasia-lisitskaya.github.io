@@ -102,13 +102,13 @@ overflow:hidden;}
 
 table {width:35%;}
 
-#myslidergg {
+.myslidergg {
 	display: block;
 	background-color: blue;
 	margin: 0 auto;
 	max-width: 960px;
 }
-#myslidergg img{width: 98%;}
+.sl{width: 100%;}
 
 
 
@@ -129,7 +129,6 @@ table {width:35%;}
     flex-direction:row;
     justify-content:space-between;
   }
-#myslidergg img{width: 100%;}
 
    
 	
