@@ -1,5 +1,5 @@
 
-    $(".myslidergg").slick({
+    $("#myslidergg").slick({
         dots: true,
         infinite: true,
         arrows: true,
