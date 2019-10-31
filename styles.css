@@ -109,7 +109,8 @@ table {width:35%;}
 }
 
 .sl{width: 100%;}
- #myslidergg img{width: 100%;}
+ #myslidergg img{max-width:100px;
+max-height:50px;}
 
 
 
