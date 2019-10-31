@@ -1,5 +1,6 @@
     $("#myslidergg").slick({
         dots: true,
+        dotsClass: 'slick-dots slider__dots',
         infinite: true,
         arrows: true,
         slidesToShow: 4,
