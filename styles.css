@@ -105,11 +105,11 @@ table {width:35%;}
 #myslidergg {
 	display: block;
 	margin: 0 auto;
-	max-width: 960px;
+	
 }
 
 
- #myslidergg img{max-width:240px;
+ #myslidergg img{max-height:100px;
 }
 
 
