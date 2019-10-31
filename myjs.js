@@ -7,7 +7,9 @@
         responsive: [{
             breakpoint: 768,
             settings: {
-                arrows: false,
+                dots: true,
+        infinite: true,
+        arrows: true,
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
